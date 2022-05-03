@@ -76,6 +76,10 @@
             },
             "development": {
               "browserTarget": "api-bcra:build:development"
+            },
+            "options": {
+              "browserTarget": "api-bcra:build",
+              "proxyConfig": "src/proxy.conf.js"
             }
           },
           "defaultConfiguration": "development"
