@@ -1,0 +1,14 @@
+<div class="container">
+    <ng-container *ngFor="let item of resultado">
+        <mat-card class="sizeCardList">
+            <mat-card-title>{{item.e}}</mat-card-title>
+            <mat-card-subtitle>Evento Importante </mat-card-subtitle>
+            <mat-card-content> 
+                <ul>
+                    <li>{{item.t}}</li>
+                    <li>{{item.d}}</li>
+                </ul>
+            </mat-card-content>
+        </mat-card>
+    </ng-container>
+</div>

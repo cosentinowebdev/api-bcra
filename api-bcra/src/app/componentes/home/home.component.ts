@@ -10,13 +10,13 @@ export class HomeComponent implements OnInit {
   errorMessage: any;
 
   constructor(private hitosService:HitosService) { 
-    this.hitosService.hitos()
-    .subscribe(
-      data => {
-          const resultado = data.total;
-          console.log(resultado);
-      }
-    );
+    // this.hitosService.hitos()
+    // .subscribe(
+    //   data => {
+    //       const resultado = data.total;
+    //       console.log(resultado);
+    //   }
+    // );
   }
 
   ngOnInit(): void {

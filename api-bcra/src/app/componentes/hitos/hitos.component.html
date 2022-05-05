@@ -1,0 +1,42 @@
+<!-- <router-outlet></router-outlet> -->
+<section class="container" style="    background-color: rgb(21, 21, 48);">
+    <form [formGroup]="formularioBusqueda" id="formularioBusqueda" class="flexYWreap">
+        <mat-form-field appearance="fill">
+            <mat-label>Personaje:</mat-label>
+            <mat-select id="personaje" formControlName="personaje">
+                <mat-option value="option">Option</mat-option>
+            </mat-select>
+        </mat-form-field>
+    
+        <mat-form-field appearance="fill">
+            <mat-label>Fecha:</mat-label>
+            <mat-select id="fecha" formControlName="fecha">
+                <mat-option value="option">Option</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Institución:</mat-label>
+            <mat-select id="fecha" formControlName="institucion">
+                <mat-option value="option">Option</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </form>
+
+</section>
+
+<section class="container flexYWreap">
+    <ng-container *ngFor="let item of resultado">
+        <mat-card class="sizeCardList">
+            <mat-card-title>{{item.e}}</mat-card-title>
+            <mat-card-subtitle>Evento Importante </mat-card-subtitle>
+            <mat-card-content> 
+                <ul>
+                    <li>{{item.t}}</li>
+                    <li>{{item.d}}</li>
+                </ul>
+            </mat-card-content>
+        </mat-card>
+    </ng-container>
+</section>
+

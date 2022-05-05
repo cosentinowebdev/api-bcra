@@ -8,17 +8,27 @@ import { TokenInterceptorService } from './interceptors/token-interceptor.servic
 import { HttpClientModule } from '@angular/common/http';
 
 import { HomeComponent } from './componentes/home/home.component';
+import { HeaderComponent } from './componentes/shell/header/header.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatCardModule
   ],
   providers: [
     {
